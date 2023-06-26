@@ -13,7 +13,7 @@ try:
     browser = webdriver.Chrome()
     browser.get("http://suninjuly.github.io/explicit_wait2.html")
 
-# говорим Selenium проверять в течение 5 секунд, пока кнопка не станет кликабельной
+# говорим Selenium проверять в течение 5 секунд, пока кнопка не станет кликабельной 
     
     button = browser.find_element(By.CSS_SELECTOR, "#book")
     
@@ -21,7 +21,7 @@ try:
         ES.text_to_be_present_in_element((By.CSS_SELECTOR, "#price"), '$100'))
 
     button.click()
-
+#scroll
     browser.execute_script("window.scrollBy(0, 100);")
 
     # Ваш код, который заполняет обязательные поля
